@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--  fonts.css-->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- {#        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}"/>#} -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/fonts.css') }}"/>
+    <!-- main css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    {% block head %}{% endblock %}
+
+</head>
+<body>
+{% block body %}{% endblock %}
+<!-- {#<script src="/static/js/main.js"></script>#} -->
+<script type=text/javascript src="{{ url_for ('static', filename='js/main.js') }} "></script>
+</body>
+</html>
+<!-- manu base yani hamma link lar shetda ulanadi birmarta  -->

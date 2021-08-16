@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+<!-- base ni chaqiryapman -->
+{% block head %}
+    <title>home</title>
+{% endblock %}
+{% block body %}
+   <!-- banner start -->
+   <div class="banner" id="banner">
+    <div class="container">
+      <h1 class="banner__title">search what you want...</h1>
+      <div class="banner__search-box" id="banner__search-box">
+
+        <button class="banner__btn-search" id="banner__btn-search">
+          <i class="fas fa-search"></i>
+        </button>
+
+        <form action="/search" method="POST">
+          <input type="text" class="banner__inp" id="banner__inp" name='address'>
+        </form>
+
+        <button class="banner__btn-close" id="banner__btn-close">
+          <i class="far fa-times"></i>
+        </button>
+      
+      </div>
+    </div>
+  </div>
+  <!-- banner end -->
+
+{% endblock %}
