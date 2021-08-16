@@ -26,10 +26,8 @@ def search_place():
             if distance < 108.9:
                 file.append(f"inside MKAD\n")
             else:
-                file.write(f"the distance between {data['address']} and Moscow Ring Road is {distance} km according to Haversine algorithm\n")
+                file.write(
+                    f"the distance between {data['address']} and Moscow Ring Road is {distance} km according to Haversine algorithm\n")
 
         return render_template('search.html', data=f"{address1.json()}, {address2.json()}")
     return render_template('search.html', data='')
-
-
-
